@@ -105,7 +105,7 @@ int main(void) {
         refresh();
         
         // Wait for user to press a key
-                    // make getch to be a blocking call
+          nodelay(stdscr, FALSE);           // make getch to be a blocking call
         getch();
 
         // Set the result code to report success
