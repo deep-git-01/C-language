@@ -372,7 +372,7 @@ void setWormHeading(enum WormHeading dir) {
 // ********************************************************************************************
 
 int main(void) {
-    int res_code;         // Result code from functions
+    enumResCode res_code;         // Result code from functions
 
     // Here we start
     initializeCursesApplication();  // Init various settings of our application
