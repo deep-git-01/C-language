@@ -15,6 +15,12 @@
 #include <curses.h>
 #include "worm.h"
 
+//Position on the board
+struct pos {
+  int y;   // y-coordinate (row)
+  int x;   // x-coordinate (column)
+};
+
 extern void placeItem(int y, int x, chtype symbol, enum ColorPairs color_pair);
 //Getters
 extern int getLastRow();

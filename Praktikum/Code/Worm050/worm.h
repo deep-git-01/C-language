@@ -15,10 +15,12 @@
  enum ResCodes {
    RES_OK,
    RES_FAILED,
+   RES_INTERNAL_ERROR,
  };
 
 // Dimensions and bounds
  #define NAP_TIME 100 // Time in millisecondes to sleep between updates of display
+#define ROWS_RESERVED 4 // Line reserved for the message area
 #define WORM_LENGTH 20
                                         
 #define MIN_NUMBER_OF_ROWS 3    // The guaranteed number of rows available for the board
@@ -31,13 +33,13 @@ enum ColorPairs
 {
   COLP_USER_WORM = 1,
   COLP_FREE_CELL,
-
+  COLP_BARRIER,
 };
 
 // Symbols to display
 #define SYMBOL_FREE_CELL ' '
 #define SYMBOL_WORM_INNER_ELEMENT '0'
-
+#define SYMBOL_BARRIER '#'
 // Game state codes
 enum GameStates
 {
