@@ -32,7 +32,7 @@ int dy;
 enum ColorPairs wcolor;
 };
 
-struct pos getWormHeadPos(struct worm* aworm);
+
 enum WormHeading
 {
   WORM_UP,
@@ -45,7 +45,7 @@ enum WormHeading
   WORM_BOT_LEFT,
 
 };
-
+struct pos getWormHeadPos(struct worm* aworm);
 extern enum ResCodes initializeWorm(struct worm* aworm, int len_max,
 struct pos headpos, enum WormHeading dir, enum ColorPairs color);
 extern void showWorm(struct worm* aworm);

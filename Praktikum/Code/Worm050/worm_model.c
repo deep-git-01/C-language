@@ -160,7 +160,7 @@ extern bool isInUseByWorm(struct worm* aworm, struct pos new_headpos )
   do
   {
     // Compare the position of the current worm element with the new_headpos
- if (aworm->wormpos[i].x == new_headpos.x)
+ if (aworm->wormpos[i].x == new_headpos.x && aworm->wormpos[i].y == new_headpos.y)
     {
       collision = true;
     }
